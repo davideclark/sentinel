@@ -36,16 +36,5 @@ namespace sentinelClient.Controllers
             })
             .ToArray();
         }
-
-        [HttpGet]
-        public void GetGpio()
-        {
-            //System.Device.Gpio.GPIOController t= new System.Device.Gpio.GPIOController();
-            var c = new GpioController(PinNumberingScheme.Board);
-
-            var pin = 10;
-            var timeOut = 500;
-
-        }
     }
 }
